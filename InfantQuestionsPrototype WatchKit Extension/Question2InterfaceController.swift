@@ -1,6 +1,6 @@
 //
-//  InterfaceController.swift
-//  InfantQuestionsPrototype WatchKit Extension
+//  Question2InterfaceController.swift
+//  InfantQuestionsPrototype
 //
 //  Created by Brown Magic on 5/26/15.
 //  Copyright (c) 2015 codeHatcher. All rights reserved.
@@ -9,12 +9,9 @@
 import WatchKit
 import Foundation
 
-var answers: [Bool] = [false, false]
 
-
-class InterfaceController: WKInterfaceController {
+class Question2InterfaceController: WKInterfaceController {
   
-  @IBOutlet weak var question1Button: WKInterfaceButton!
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
     
@@ -24,10 +21,6 @@ class InterfaceController: WKInterfaceController {
   override func willActivate() {
     // This method is called when watch view controller is about to be visible to user
     super.willActivate()
-    println("Answers: \(answers[0])")
-    if answers[0] {
-      question1Button.setBackgroundColor(UIColor.yellowColor())
-    }
   }
   
   override func didDeactivate() {
@@ -35,7 +28,4 @@ class InterfaceController: WKInterfaceController {
     super.didDeactivate()
   }
   
-  @IBAction func questionButtonTapped() {
-    //presentControllerWithName("detailSegue", context: 1)
-  }
 }

@@ -20,6 +20,7 @@
 		8256B46F1B154ADA0086F393 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8256B46E1B154ADA0086F393 /* Images.xcassets */; };
 		8256B4721B154ADA0086F393 /* InfantQuestionsPrototype WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8256B45A1B154ADA0086F393 /* InfantQuestionsPrototype WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8256B47B1B1551590086F393 /* DetailQuestionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8256B47A1B1551590086F393 /* DetailQuestionInterfaceController.swift */; };
+		8256B47D1B1559450086F393 /* Question2InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8256B47C1B1559450086F393 /* Question2InterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		8256B46C1B154ADA0086F393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8256B46E1B154ADA0086F393 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8256B47A1B1551590086F393 /* DetailQuestionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailQuestionInterfaceController.swift; sourceTree = "<group>"; };
+		8256B47C1B1559450086F393 /* Question2InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question2InterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				8256B45E1B154ADA0086F393 /* InterfaceController.swift */,
+				8256B47C1B1559450086F393 /* Question2InterfaceController.swift */,
 				8256B47A1B1551590086F393 /* DetailQuestionInterfaceController.swift */,
 				8256B4601B154ADA0086F393 /* Images.xcassets */,
 				8256B45C1B154ADA0086F393 /* Supporting Files */,
@@ -383,6 +386,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8256B47B1B1551590086F393 /* DetailQuestionInterfaceController.swift in Sources */,
+				8256B47D1B1559450086F393 /* Question2InterfaceController.swift in Sources */,
 				8256B45F1B154ADA0086F393 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,22 +13,41 @@
                         <label alignment="left" text="Select the Symptoms Your Newborn Has" numberOfLines="2" id="wXK-LR-erO">
                             <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                         </label>
-                        <button width="1" alignment="left" title="Check Temperature" id="NI1-hp-ILf">
+                        <button width="1" alignment="left" title="Temperature?" id="NI1-hp-ILf">
                             <connections>
                                 <action selector="questionButtonTapped" destination="AgC-eL-Hgc" id="bp2-PG-Xo8"/>
                                 <segue destination="aFr-3q-cO7" kind="push" identifier="detailSegue" id="EdP-Tn-RST"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="Cough?" id="pEh-wz-zKn">
+                            <connections>
+                                <segue destination="h8F-Cq-6jD" kind="push" id="3vt-EI-fWE"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="question1Button" destination="NI1-hp-ILf" id="lWE-Lx-Mev"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+        <!--Detail Question Interface Controller-->
+        <scene sceneID="CfD-C3-YAa">
+            <objects>
+                <controller id="h8F-Cq-6jD" customClass="DetailQuestionInterfaceController" customModule="InfantQuestionsPrototype_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Has he/she had a cough for more than 72 hours?" numberOfLines="0" id="bXa-bA-y0o"/>
                     </items>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="450" y="270"/>
         </scene>
         <!--Detail Question Interface Controller-->
         <scene sceneID="f2Q-NT-zxh">
             <objects>
                 <controller id="aFr-3q-cO7" customClass="DetailQuestionInterfaceController" customModule="InfantQuestionsPrototype_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Is the temperature of the baby higher than 98.6 degrees?" numberOfLines="0" id="qSk-q0-gmt"/>
+                        <label alignment="left" text="Is he/she currently experiencing a fever over 100.4 degrees?" numberOfLines="0" id="qSk-q0-gmt"/>
                     </items>
                     <menu key="menu" id="Z57-dV-4Rk">
                         <items>
