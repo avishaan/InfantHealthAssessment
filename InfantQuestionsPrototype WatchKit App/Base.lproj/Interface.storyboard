@@ -15,6 +15,7 @@
                         </label>
                         <button width="1" alignment="left" title="Check Temperature" id="NI1-hp-ILf">
                             <connections>
+                                <action selector="questionButtonTapped" destination="AgC-eL-Hgc" id="bp2-PG-Xo8"/>
                                 <segue destination="aFr-3q-cO7" kind="push" identifier="detailSegue" id="EdP-Tn-RST"/>
                             </connections>
                         </button>
@@ -22,10 +23,10 @@
                 </controller>
             </objects>
         </scene>
-        <!--Interface Controller-->
+        <!--Detail Question Interface Controller-->
         <scene sceneID="f2Q-NT-zxh">
             <objects>
-                <controller id="aFr-3q-cO7">
+                <controller id="aFr-3q-cO7" customClass="DetailQuestionInterfaceController" customModule="InfantQuestionsPrototype_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Is the temperature of the baby higher than 98.6 degrees?" numberOfLines="0" id="qSk-q0-gmt"/>
                     </items>
