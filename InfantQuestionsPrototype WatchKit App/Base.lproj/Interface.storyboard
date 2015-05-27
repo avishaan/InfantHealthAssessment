@@ -16,7 +16,6 @@
                         <button width="1" alignment="left" title="Temperature?" id="NI1-hp-ILf">
                             <connections>
                                 <action selector="questionButtonTapped" destination="AgC-eL-Hgc" id="bp2-PG-Xo8"/>
-                                <segue destination="aFr-3q-cO7" kind="push" identifier="detailSegue" id="EdP-Tn-RST"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Cough?" id="pEh-wz-zKn">
@@ -42,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="450" y="270"/>
         </scene>
-        <!--Detail Question Interface Controller-->
+        <!--detailQuestion-->
         <scene sceneID="f2Q-NT-zxh">
             <objects>
-                <controller id="aFr-3q-cO7" customClass="DetailQuestionInterfaceController" customModule="InfantQuestionsPrototype_WatchKit_Extension">
+                <controller identifier="detailQuestion" id="aFr-3q-cO7" customClass="DetailQuestionInterfaceController" customModule="InfantQuestionsPrototype_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="Is he/she currently experiencing a fever over 100.4 degrees?" numberOfLines="0" id="qSk-q0-gmt"/>
                     </items>

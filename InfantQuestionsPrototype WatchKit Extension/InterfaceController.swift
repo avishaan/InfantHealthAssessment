@@ -36,6 +36,6 @@ class InterfaceController: WKInterfaceController {
   }
   
   @IBAction func questionButtonTapped() {
-    //presentControllerWithName("detailSegue", context: 1)
+    presentControllerWithName("detailQuestion", context: 0)
   }
 }

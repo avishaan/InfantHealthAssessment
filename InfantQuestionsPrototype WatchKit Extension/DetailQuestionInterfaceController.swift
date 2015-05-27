@@ -12,10 +12,14 @@ import Foundation
 
 class DetailQuestionInterfaceController: WKInterfaceController {
   
+  var questionContext:Int?
+  
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
     
     // Configure interface objects here.
+    println("Context: \(context)")
+    questionContext = context as? Int
   }
   
   override func willActivate() {
@@ -29,10 +33,10 @@ class DetailQuestionInterfaceController: WKInterfaceController {
   }
   
   @IBAction func onYesButtonPress() {
-    answers[0] = true
+    answers[questionContext!] = true
   }
   @IBAction func onNoButtonPressed() {
-    answers[0] = false
+    answers[questionContext!] = false
   }
   @IBAction func onMaybeButtonPress() {
     
