@@ -10,7 +10,8 @@ import WatchKit
 import Foundation
 
 var answers: [String] = ["blank", "blank"]
-
+let red = UIColor(red: 0.4, green: 0.053, blue: 0.036, alpha: 0.8)
+let green = UIColor(red: 0.072, green: 0.4, blue: 0.114, alpha: 0.8)
 
 class InterfaceController: WKInterfaceController {
   
@@ -29,18 +30,18 @@ class InterfaceController: WKInterfaceController {
     
     // handle button 1
     if answers[0] == "yes" {
-      question1Button.setBackgroundColor(UIColor.yellowColor())
+      question1Button.setBackgroundColor(red)
       question1Button.setAlpha(0.5)
     } else if answers[0] == "no" {
-      question1Button.setBackgroundColor(UIColor.greenColor())
+      question1Button.setBackgroundColor(green)
       question1Button.setAlpha(0.5)
     }
     // handle button 2
     if answers[1] == "yes" {
-      question2Button.setBackgroundColor(UIColor.yellowColor())
+      question2Button.setBackgroundColor(red)
       question2Button.setAlpha(0.5)
     } else if answers[1] == "no" {
-      question2Button.setBackgroundColor(UIColor.greenColor())
+      question2Button.setBackgroundColor(green)
       question2Button.setAlpha(0.5)
     }
   }
