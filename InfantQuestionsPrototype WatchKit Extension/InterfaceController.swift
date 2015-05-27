@@ -38,10 +38,10 @@ class InterfaceController: WKInterfaceController {
     // handle button 2
     if answers[1] == "yes" {
       question2Button.setBackgroundColor(UIColor.yellowColor())
-      question1Button.setAlpha(0.5)
+      question2Button.setAlpha(0.5)
     } else if answers[1] == "no" {
       question2Button.setBackgroundColor(UIColor.greenColor())
-      question1Button.setAlpha(0.5)
+      question2Button.setAlpha(0.5)
     }
   }
   
