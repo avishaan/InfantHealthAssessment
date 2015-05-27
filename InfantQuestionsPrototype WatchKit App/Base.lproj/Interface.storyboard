@@ -32,6 +32,7 @@
                     <connections>
                         <outlet property="question1Button" destination="NI1-hp-ILf" id="lWE-Lx-Mev"/>
                         <outlet property="question2Button" destination="pEh-wz-zKn" id="jce-HQ-Wbi"/>
+                        <outlet property="resultsLabel" destination="re4-n2-cwa" id="tbO-or-ShQ"/>
                     </connections>
                 </controller>
             </objects>

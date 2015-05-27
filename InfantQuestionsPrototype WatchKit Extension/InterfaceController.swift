@@ -22,6 +22,7 @@ class InterfaceController: WKInterfaceController {
   
   @IBOutlet weak var question1Button: WKInterfaceButton!
   @IBOutlet weak var question2Button: WKInterfaceButton!
+  @IBOutlet weak var resultsLabel: WKInterfaceLabel!
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
     
@@ -48,6 +49,17 @@ class InterfaceController: WKInterfaceController {
     } else if answers[1] == "no" {
       question2Button.setBackgroundColor(green)
       question2Button.setAlpha(0.5)
+    }
+    
+    // check to see if the questions are answered, if so change label text
+    if answers[0] != "blank" && answers[1] != "blank" {
+      if answers[0] == "yes" || answers[1] == "yes" {
+        resultsLabel.setText("Check with Doctor")
+      } else {
+        resultsLabel.setText("Don't Worry!")
+      }
+    } else {
+      resultsLabel.setText("Finish Questions")
     }
   }
   
