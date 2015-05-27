@@ -10,9 +10,10 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="InfantQuestionsPrototype_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="left" text="Select the Symptoms Your Newborn Has" numberOfLines="2" id="wXK-LR-erO">
-                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        <label alignment="left" text="Select Symptoms" numberOfLines="2" id="wXK-LR-erO">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
                         </label>
+                        <separator alignment="left" id="hEc-S6-Blq"/>
                         <button width="1" alignment="left" title="Temperature?" id="NI1-hp-ILf">
                             <connections>
                                 <action selector="questionButtonTapped" destination="AgC-eL-Hgc" id="bp2-PG-Xo8"/>
@@ -23,6 +24,10 @@
                                 <action selector="onCoughButtonPress" destination="AgC-eL-Hgc" id="Jfw-R6-gOA"/>
                             </connections>
                         </button>
+                        <separator alignment="left" id="nOv-BD-NCM"/>
+                        <label alignment="center" text="Finish Questions" id="re4-n2-cwa">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
                     </items>
                     <connections>
                         <outlet property="question1Button" destination="NI1-hp-ILf" id="lWE-Lx-Mev"/>
