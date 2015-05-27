@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="InfantQuestionsPrototype_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="Select the Symptoms Your Newborn Has" numberOfLines="2" id="wXK-LR-erO">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <button width="1" alignment="left" title="Check Temperature" id="NI1-hp-ILf">
+                            <connections>
+                                <segue destination="aFr-3q-cO7" kind="push" identifier="detailSegue" id="EdP-Tn-RST"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="f2Q-NT-zxh">
+            <objects>
+                <controller id="aFr-3q-cO7">
+                    <items>
+                        <label alignment="left" text="Is the temperature of the baby higher than 98.6 degrees?" numberOfLines="0" id="qSk-q0-gmt"/>
+                    </items>
+                    <menu key="menu" id="Z57-dV-4Rk">
+                        <items>
+                            <menuItem title="Yes" icon="accept" id="efs-Gz-ZeF"/>
+                            <menuItem title="No" icon="decline" id="uCV-vi-fyh"/>
+                            <menuItem title="Maybe" icon="maybe" id="Yjf-db-Wns"/>
+                        </items>
+                    </menu>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="565" y="823"/>
+        </scene>
+    </scenes>
+</document>
