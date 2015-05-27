@@ -10,6 +10,11 @@ import WatchKit
 import Foundation
 
 var answers: [String] = ["blank", "blank"]
+var questions: [String] = [
+  "Does he/she currently have a fever that is over 100.4 degrees?",
+  "Has he/she had a cough for 72 hours or longer?"
+]
+
 let red = UIColor(red: 0.4, green: 0.053, blue: 0.036, alpha: 0.8)
 let green = UIColor(red: 0.072, green: 0.4, blue: 0.114, alpha: 0.8)
 
