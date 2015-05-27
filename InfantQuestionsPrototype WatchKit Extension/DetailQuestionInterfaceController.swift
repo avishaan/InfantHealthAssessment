@@ -33,10 +33,10 @@ class DetailQuestionInterfaceController: WKInterfaceController {
   }
   
   @IBAction func onYesButtonPress() {
-    answers[questionContext!] = true
+    answers[questionContext!] = "yes"
   }
   @IBAction func onNoButtonPressed() {
-    answers[questionContext!] = false
+    answers[questionContext!] = "no"
   }
   @IBAction func onMaybeButtonPress() {
     

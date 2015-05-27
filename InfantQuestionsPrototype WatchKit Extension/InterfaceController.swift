@@ -9,7 +9,7 @@
 import WatchKit
 import Foundation
 
-var answers: [Bool] = [false, false]
+var answers: [String] = ["blank", "blank"]
 
 
 class InterfaceController: WKInterfaceController {
@@ -26,10 +26,22 @@ class InterfaceController: WKInterfaceController {
     // This method is called when watch view controller is about to be visible to user
     super.willActivate()
     println("Answers: \(answers[0])")
-    if answers[0] {
+    
+    // handle button 1
+    if answers[0] == "yes" {
       question1Button.setBackgroundColor(UIColor.yellowColor())
-    } else {
+      question1Button.setAlpha(0.5)
+    } else if answers[0] == "no" {
       question1Button.setBackgroundColor(UIColor.greenColor())
+      question1Button.setAlpha(0.5)
+    }
+    // handle button 2
+    if answers[1] == "yes" {
+      question2Button.setBackgroundColor(UIColor.yellowColor())
+      question1Button.setAlpha(0.5)
+    } else if answers[1] == "no" {
+      question2Button.setBackgroundColor(UIColor.greenColor())
+      question1Button.setAlpha(0.5)
     }
   }
   
