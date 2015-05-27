@@ -14,12 +14,16 @@ class DetailQuestionInterfaceController: WKInterfaceController {
   
   var questionContext:Int?
   
+  @IBOutlet weak var detailQuestionLabel: WKInterfaceLabel!
+  
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
     
     // Configure interface objects here.
     println("Context: \(context)")
-    questionContext = context as? Int
+    var questionContext = context as? Int
+    
+    detailQuestionLabel.setText(questions[questionContext!])
   }
   
   override func willActivate() {

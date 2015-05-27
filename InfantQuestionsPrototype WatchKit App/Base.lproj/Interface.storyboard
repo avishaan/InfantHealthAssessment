@@ -31,17 +31,6 @@
                 </controller>
             </objects>
         </scene>
-        <!--Detail Question Interface Controller-->
-        <scene sceneID="CfD-C3-YAa">
-            <objects>
-                <controller id="h8F-Cq-6jD" customClass="DetailQuestionInterfaceController" customModule="InfantQuestionsPrototype_WatchKit_Extension">
-                    <items>
-                        <label alignment="left" text="Has he/she had a cough for more than 72 hours?" numberOfLines="0" id="bXa-bA-y0o"/>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="450" y="270"/>
-        </scene>
         <!--detailQuestion-->
         <scene sceneID="f2Q-NT-zxh">
             <objects>
@@ -68,9 +57,12 @@
                             </menuItem>
                         </items>
                     </menu>
+                    <connections>
+                        <outlet property="detailQuestionLabel" destination="qSk-q0-gmt" id="Z5P-xd-VPk"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="565" y="823"/>
+            <point key="canvasLocation" x="254" y="756"/>
         </scene>
     </scenes>
 </document>
