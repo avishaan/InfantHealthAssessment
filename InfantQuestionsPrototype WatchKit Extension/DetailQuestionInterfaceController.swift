@@ -21,7 +21,7 @@ class DetailQuestionInterfaceController: WKInterfaceController {
     
     // Configure interface objects here.
     println("Context: \(context)")
-    var questionContext = context as? Int
+    questionContext = context as? Int
     
     detailQuestionLabel.setText(questions[questionContext!])
   }
