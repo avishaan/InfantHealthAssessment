@@ -15,6 +15,7 @@ var answers: [Bool] = [false, false]
 class InterfaceController: WKInterfaceController {
   
   @IBOutlet weak var question1Button: WKInterfaceButton!
+  @IBOutlet weak var question2Button: WKInterfaceButton!
   override func awakeWithContext(context: AnyObject?) {
     super.awakeWithContext(context)
     
@@ -27,6 +28,8 @@ class InterfaceController: WKInterfaceController {
     println("Answers: \(answers[0])")
     if answers[0] {
       question1Button.setBackgroundColor(UIColor.yellowColor())
+    } else {
+      question1Button.setBackgroundColor(UIColor.greenColor())
     }
   }
   
@@ -37,5 +40,8 @@ class InterfaceController: WKInterfaceController {
   
   @IBAction func questionButtonTapped() {
     presentControllerWithName("detailQuestion", context: 0)
+  }
+  @IBAction func onCoughButtonPress() {
+    presentControllerWithName("detailQuestion", context: 1)
   }
 }

@@ -20,12 +20,13 @@
                         </button>
                         <button width="1" alignment="left" title="Cough?" id="pEh-wz-zKn">
                             <connections>
-                                <segue destination="h8F-Cq-6jD" kind="push" id="3vt-EI-fWE"/>
+                                <action selector="onCoughButtonPress" destination="AgC-eL-Hgc" id="Jfw-R6-gOA"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
                         <outlet property="question1Button" destination="NI1-hp-ILf" id="lWE-Lx-Mev"/>
+                        <outlet property="question2Button" destination="pEh-wz-zKn" id="jce-HQ-Wbi"/>
                     </connections>
                 </controller>
             </objects>
