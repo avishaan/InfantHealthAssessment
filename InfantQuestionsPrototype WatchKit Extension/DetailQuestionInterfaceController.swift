@@ -28,4 +28,14 @@ class DetailQuestionInterfaceController: WKInterfaceController {
     super.didDeactivate()
   }
   
+  @IBAction func onYesButtonPress() {
+    answers[0] = true
+  }
+  @IBAction func onNoButtonPressed() {
+    answers[0] = false
+  }
+  @IBAction func onMaybeButtonPress() {
+    
+  }
+  
 }

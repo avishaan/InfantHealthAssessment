@@ -32,9 +32,21 @@
                     </items>
                     <menu key="menu" id="Z57-dV-4Rk">
                         <items>
-                            <menuItem title="Yes" icon="accept" id="efs-Gz-ZeF"/>
-                            <menuItem title="No" icon="decline" id="uCV-vi-fyh"/>
-                            <menuItem title="Maybe" icon="maybe" id="Yjf-db-Wns"/>
+                            <menuItem title="Yes" icon="accept" id="efs-Gz-ZeF">
+                                <connections>
+                                    <action selector="onYesButtonPress" destination="aFr-3q-cO7" id="yjZ-p9-vTT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="No" icon="decline" id="uCV-vi-fyh">
+                                <connections>
+                                    <action selector="onNoButtonPressed" destination="aFr-3q-cO7" id="125-NJ-mEM"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Maybe" icon="maybe" id="Yjf-db-Wns">
+                                <connections>
+                                    <action selector="onMaybeButtonPress" destination="aFr-3q-cO7" id="uwt-PR-Bho"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </controller>

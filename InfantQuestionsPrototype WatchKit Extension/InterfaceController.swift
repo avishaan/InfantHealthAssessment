@@ -9,6 +9,8 @@
 import WatchKit
 import Foundation
 
+var answers: [Bool] = [false, false]
+
 
 class InterfaceController: WKInterfaceController {
   
@@ -21,6 +23,7 @@ class InterfaceController: WKInterfaceController {
   override func willActivate() {
     // This method is called when watch view controller is about to be visible to user
     super.willActivate()
+    println("Answers: \(answers[0])")
   }
   
   override func didDeactivate() {
